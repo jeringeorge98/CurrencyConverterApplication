@@ -1,6 +1,6 @@
 package com.androidpractice.currencyconverter.util
 
-sealed class Resource<T>(val data :T?,val error:String?) {
+sealed class Resource<T>(val data :T?,val message: String?) {
 
     class Success<T>(data: T?): Resource<T>(data,null)
 
